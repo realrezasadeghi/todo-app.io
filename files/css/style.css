@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
+body,
+button {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: hsl(234, 39%, 85%);
+}
+.todo-app {
+  background: hsl(235, 21%, 11%);
+  height: 100vh;
+  position: relative;
+}
+.todo-app__container {
+  position: absolute;
+  left: 34%;
+  top: 25%;
+}
+.todo-app__new-task {
+  background: hsl(235, 24%, 19%);
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 350px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+.todo-app__new-task #task {
+  border: none;
+  background: none;
+  color: hsl(234, 39%, 85%);
+  padding: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+.todo-app__new-task #task:focus {
+  outline: none;
+}
+.todo-app__list-task {
+  background: hsl(235, 24%, 19%);
+  border-radius: 5px;
+  min-width: 500px;
+  margin-top: 10px;
+  max-height: 350px;
+  overflow-y: auto;
+}
+.todo-app__list-task::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+.todo-app__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  list-style: none;
+  padding: 5px;
+}
+.todo-app__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.todo-app__item #deleteTask {
+  cursor: pointer;
+}
+.todo-app__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.todo-app__tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 0.5em;
+  justify-items: center;
+  align-items: center;
+  border-top: 1px solid hsl(234, 11%, 52%);
+}
+.todo-app__filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.todo-app__btn {
+  background: none;
+  border: none;
+  margin: 3px;
+  cursor: pointer;
+  color: hsl(234, 39%, 85%);
+  transition: 0.2s ease-in-out;
+  font-size: 16px;
+}
+.todo-app__btn:hover {
+  color: hsl(234, 11%, 52%);
+}
