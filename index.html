@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="files/css/style.css" />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <section class="todo-app">
+      <img src="images/bg-desktop-dark.jpg" alt="bg-desktop-dark" />
+      <div class="todo-app__container">
+        <div class="todo-app__new-task">
+          <input type="radio" name="task-radio" id="task-radio" />
+          <input
+            type="text"
+            id="task"
+            name="task"
+            placeholder="Create New Task"
+          />
+        </div>
+        <div class="todo-app__list-task">
+          <ul class="todo-app__items" id="items">
+            <li class="todo-app__item">
+              <div class="todo-app__info">
+                <input type="checkbox" name="complete" id="complete" />
+                <p>reza sadeghi</p>
+              </div>
+              <img
+                src="images/icon-cross.svg"
+                alt="delete-task"
+                id="deleteTask"
+              />
+            </li>
+          </ul>
+          <div class="todo-app__tools">
+            <p>5 item left</p>
+            <div class="todo-app__filter">
+              <button class="todo-app__btn" id="btn-all">All</button>
+              <button class="todo-app__btn" id="btn-active">Active</button>
+              <button class="todo-app__btn" id="btn-completed">
+                Completed
+              </button>
+            </div>
+            <button class="todo-app__btn" id="btn-clearAll">Clear All</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="files/js/app.js" defer></script>
+  </body>
+</html>
